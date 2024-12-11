@@ -130,12 +130,29 @@
             overflow-y: auto;
             flex-grow: 1;
         }
+        .qr {
+            position: absolute;
+            width: 20vw;
+            height: 20vw;
+            right: 5vw;
+            top: 10vw;
+        }
+        .scantext{
+            position: absolute;
+            width: 20vw;
+            right: 5vw;
+            top: 30vw;
+            text-align: center;
+            font-family: 'Constantia Bold', serif;
+        }
     </style>
 </head>
 
 <body>
     <div class="leaderboard-container">
         <img src="assets/logo.png" alt="Qatar Archives Logo" class="logo">
+        <img src="assets/qr.png" alt="qrcode" class="qr"/>
+        <h2 class="scantext">Scan the QR code to play the game</h2>
         <h1 class="board-title">Leader Board</h1>
         <!-- <p class="subtitle">Scores of top 8 players</p> -->
         <div id="tableBody" class="scores-container">
