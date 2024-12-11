@@ -41,11 +41,8 @@ let Age
 let Email
 
 async function getFireData() {
-    const tableBody = document.getElementById('tableBody')
-    tableBody.innerHTML = `<div class="header-row">
-                <span>Name</span>
-                <span>Score</span>
-            </div>`  // Clear existing rows
+    const tableBody = document.querySelector('.scrollable-content')
+    tableBody.innerHTML = ``  // Clear existing rows
 
     const querySnapshot = await getDocs(collection(db, collectionName))
 
